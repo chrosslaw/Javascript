@@ -66,7 +66,6 @@ while (gameContinue) {
       gameContinue = false;
     case pathCharacter:
       console.log("You cannot go back");
-      gameContinue = false;
     case fieldCharacter:
       myField.field[row][column] = pathCharacter;
   }
