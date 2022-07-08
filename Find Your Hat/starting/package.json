@@ -1,11 +1,18 @@
 {
-  "name": "find-your-hat",
+  "name": "findhatnode",
   "version": "1.0.0",
   "description": "A terminal maze-solving game.",
   "main": "main.js",
   "author": "Codecademy",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
     "prompt-sync": "^4.1.7"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "devDependencies": {}
 }

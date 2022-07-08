@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "javascript",
+  "description": "Javascript challenges",
+  "version": "1.0.0",
+  "main": "Network.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrosslaw/Javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrosslaw/Javascript/issues"
+  },
+  "homepage": "https://github.com/chrosslaw/Javascript#readme"
+}
