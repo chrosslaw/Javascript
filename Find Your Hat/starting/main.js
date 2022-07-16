@@ -10,7 +10,7 @@ const hat = "^";
 const hole = "O";
 const fieldCharacter = "░";
 const pathCharacter = "*";
-
+const pathBlocks = [fieldCharacter, hole, fieldCharacter];
 class Field {
   constructor(field) {
     this.field = field;
@@ -21,17 +21,24 @@ class Field {
       console.log(tf[i].join(""));
     }
   }
-
-  static generateField(rows, columns) {
-    console.log(board);
+  generateField(rows, columns) {
+    let newField;
+    let randomPath;
+    for (let row = 0; row < columns; i++) {
+      for (let col = 0; col < rows; row++) {
+        randomPath = Math.floor(Math.random() * 3);
+        newField += [pathBlocks[randomPath]];
+      }
+    }
+    return newField;
   }
 }
 
-const myField = new Field([
-  ["*", "░", "O"],
-  ["░", "O", "░"],
-  ["░", "^", "░"],
-]);
+const myField = new Field(generateField(5, 5));
+//   ["*", "░", "O"],
+//   ["░", "O", "░"],
+//   ["░", "^", "░"],
+// ]);
 let gameContinue = true;
 let row = 0;
 let column = 0;
