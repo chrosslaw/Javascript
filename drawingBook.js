@@ -36,8 +36,7 @@ function readLine() {
 //if page number is less than the middle number, then turn the pages from the beginning of the book, divide page number by two, and round down :
 //--otherwise, the page number is higher than the middle number, and we start turning pages from the back of the book--
 //if the number is even and not the last page, subtract the page number from the total pages, divide by two, round UP :
-//if the page number is not even, subtract the page number from the total pages, divide by two, round DOWN :
-//if none of the above, then we are on the first or last page, so there are 0 pages to flip.
+//if the page number is not even, subtract the page number from the total pages, divide by two, round DOWN 
 function pageCount(n, p) {
     // Write your code here
     return (n/2 === p ? Math.floor(n/2/2) : n/2 > p ? Math.floor(p/2) : (n % 2 === 0 && p !== n) ? Math.round((n-p)/2) : Math.floor((n-p)/2))
